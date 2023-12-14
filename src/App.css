@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  margin: 0;
+  margin-left: .2rem;
+  margin-right: .2rem;
+}
+
+.namenav {
+  position: relative;
+}
+
+.myname {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  font-size: 3rem;
+}
+
+.mainnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 1rem;
+}
+
+.line {
+  height: 3rem;
+  width: 100rem;
+  color: black;
+}
