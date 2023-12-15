@@ -1,20 +1,30 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from './components/Home';
+import About from './components/About';
 import NavBar from './components/NavBar';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Sections from './pages/Sections';
+import Aos from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 function App() {
+   // Initialize AOS
+   useEffect(() => {
+    Aos.init({});
+  }, []);
+
   return (
     <div className="App">
       <div className='namenav'>
         <h1 className='myname' >Hiroaki Sotooka</h1> <NavBar />
       </div>
-      <div className='line'></div>
+      <Sections />
+      {/* <div className='line'></div>
       <Routes>
         <Route
         exact
@@ -41,7 +51,7 @@ function App() {
         path='/contact'
         element={<Contact />}
         />     
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
