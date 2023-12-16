@@ -3,36 +3,14 @@
 const About = () => {
     return (
         <div id='about' style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div >
-        <div className='mx-auto max-w-2xl lg:mx-0'>
-          <h2 className='text-4xl font-bold tracking-tight text-primary-green sm:text-6xl'>
-            About Us
-          </h2>
-          <p className='mt-6 text-lg leading-8'>
-            At Neurosynth Dynamics, we are at the forefront of biotechnological
-            and pharmaceutical innovation, dedicated to the relentless pursuit
-            of genetic engineering marvels and cybernetic advancements. Our
-            esteemed conglomerate is celebrated for breakthroughs that not only
-            push the boundaries of medical science but also integrate
-            cutting-edge computational biology to enhance human life. While our
-            public endeavors champion medical progress, our clandestine research
-            delves into the fusion of technology and biology, creating
-            groundbreaking neural-interface technologies and bio-coded materials
-            designed to amplify human capabilities beyond current limitations.
-          </p>
-          <p className='mt-6 text-lg leading-8'>
-            In our quest for transcendent innovation, we recognize the profound
-            responsibility that accompanies our groundbreaking work. The
-            unforeseen emergence of the advanced undead has been a sobering
-            consequence, reminding us that the path to progress is fraught with
-            complex ethical considerations. At Neurosynth Dynamics, we are
-            committed to advancing science with a vigilant eye on the
-            implications of our research, ensuring that each step forward is
-            taken with the utmost respect for the delicate balance between human
-            potential and the natural order.
-          </p>
+      <img src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjoyNzIsInciOjIwMDAsImZzIjoxMzYsImZnYyI6IiMyOTNCMzciLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/QWJvdXQgTWU/hello-good-old-style-regular.png" className="title-resume-shadow" />
+        <img src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjoyNzIsInciOjIwMDAsImZzIjoxMzYsImZnYyI6IiMyOTNCMzciLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/QWJvdXQgTWU/hello-good-old-style-regular.png" className="title-resume" />
+        <div>
+          <img src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiM2MTZCNkMiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/ZA/font-frame-pro.png" className="aboutme-frame"/>
+          <div className="about-me-p" > 
+            <p>As a newcomer to the coding industry, I bring a distinctive blend of healthcare expertise and design creativity. My mission is clear: to infuse software with elegance and a human touch. Proficient in JavaScript, HTML, and CSS, I'm committed to learning and collaborating. With strong communication skills, efficient teamwork, and the ability to excel under pressure, I'm ready to redefine software development.</p>
+          </div>
         </div>
-      </div>
     </div>
     )
 }

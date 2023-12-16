@@ -218,3 +218,55 @@ h4 {
 a {
   text-decoration: none;
 }
+
+.aboutme-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 25rem;
+  
+}
+
+.about-me-p{
+  display: flex;
+  height: 290px;
+  width: 450px;
+  background-color: #F6CA8F;
+  text-align: center;
+  color: #282c34;
+  font-size: larger;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: -22.6rem;
+  margin-left: 2.2rem;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  background-color: #F6CA8F;
+  height: 8rem;
+  width: 21.5rem;
+  border-radius: 20px;
+  opacity: .8;
+}
+
+.email-add {
+  padding-left: 1rem;
+  height: 3rem;
+  margin-right: -15rem;
+}
+
+.git-link-container {
+  display: flex;
+  gap: 1rem;
+  margin-left: 34rem;
+  margin-top: -3rem;
+}
+
+.git-link-image {
+  height: 5rem;
+}
