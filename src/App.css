@@ -270,3 +270,21 @@ a {
 .git-link-image {
   height: 5rem;
 }
+
+.main-main-logo {
+  height: 15rem;
+}
+
+.tree-main {
+  position: absolute;
+  margin-left: -3rem;
+  margin-top: 8rem;
+  height: 40rem;
+  opacity: .2;
+}
+
+.tagline {
+  font-size: 2rem;
+  color: #d2a871;
+  z-index: 1;
+}
