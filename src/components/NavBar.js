@@ -97,7 +97,7 @@ const NavBar = () => {
 
     const navStyle = {
         background: scrollBackground ? 'white' : 'white',
-        height: '7rem',
+        height: '8rem',
         width: 'calc(100%)',
         position: 'fixed',
         top: '0',
@@ -237,8 +237,8 @@ const NavBar = () => {
                 style={{
                     position: 'fixed',
                     top: '120px',
-                    left: '12px',
-                    width: 'calc(100% - 2rem)',
+                    // left: '12px',
+                    width: 'calc(100%)',
                     height: '100vh',
                     display: 'flex',
                     alignItems: 'center',
@@ -246,42 +246,57 @@ const NavBar = () => {
                     zIndex: '10',
                     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.1)',
                     backgroundColor: 'white',
-                    outline: '1px solid black',
+                    // outline: '1px solid black',
                 }}
                 >
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '-8rem', gap: "3rem", height: '100%' }}>
-                    <Link
-                    to='about'
-                    smooth={true}
-                    style={{ textDecoration: 'none', color: 'inherit', fontSize: '24px' }}
-                    onClick={() => setToggled(false)}
-                    >
-                    <h1>About</h1>
-                    </Link>
-                    <Link
-                    to="projects"
-                    smooth={true}
-                    style={{ textDecoration: 'none', color: 'inherit', fontSize: '24px' }}
-                    onClick={() => setToggled(false)}
-                    >
-                    <h1>Projects</h1>
-                    </Link>
-                    <Link
-                    to="resume"
-                    smooth={true}
-                    style={{ textDecoration: 'none', color: 'inherit', fontSize: '24px' }}
-                    onClick={() => setToggled(false)}
-                    >
-                    <h1>Resume</h1>
-                    </Link>
-                    <Link
-                    to="contact"
-                    smooth={true}
-                    style={{ textDecoration: 'none', color: 'inherit', fontSize: '24px' }}
-                    onClick={() => setToggled(false)}
-                    >
-                    <h1>Contact</h1>
-                    </Link>
+                    <div className="frame-animation-container"> 
+                    <img  style={{height: '3rem', position: 'absolute', marginTop: '-5rem'}} src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/TWVudQ/hello-good-old-style-regular.png" />
+                        <img className="frame-animation-image" src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/bw/font-frame-pro.png" />
+                        <div className="frame-animation-menu">
+                        
+                            <div className="floatinng-menu-1">
+                                <Link
+                                    to='about'
+                                    smooth={true}
+                                    style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}
+                                    onClick={() => setToggled(false)}
+                                    >
+                                    <img  style={{height: '1.5rem', position: 'absolute' }} src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/QWJvdXQ/hello-good-old-style-regular.png" />
+                                    <img src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjoxNTYsInciOjIwMDAsImZzIjo3OCwiZmdjIjoiIzM2NEI1MCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eQ/font-frame-pro.png" style={{  width: '10rem' }} ></img>
+                                </Link>
+                                <Link
+                                    to='projects'
+                                    smooth={true}
+                                    style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}
+                                    onClick={() => setToggled(false)}
+                                    >
+                                    <img  style={{height: '1.5rem', position: 'absolute' }} src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/UHJvamVjdHM/hello-good-old-style-regular.png" />
+                                    <img src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjoxNTYsInciOjIwMDAsImZzIjo3OCwiZmdjIjoiIzM2NEI1MCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eQ/font-frame-pro.png" style={{  width: '10rem' }} ></img>
+                                </Link>
+                            </div>
+                            <div className="floatinng-menu-2">
+                                <Link
+                                    to='resume'
+                                    smooth={true}
+                                    style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}
+                                    onClick={() => setToggled(false)}
+                                    >
+                                    <img  style={{height: '1.5rem', position: 'absolute' }} src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/UmVzdW1l/hello-good-old-style-regular.png" />
+                                    <img src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjoxNTYsInciOjIwMDAsImZzIjo3OCwiZmdjIjoiIzM2NEI1MCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eQ/font-frame-pro.png" style={{  width: '10rem' }} ></img>
+                                </Link>
+                                <Link
+                                    to='contact'
+                                    smooth={true}
+                                    style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}
+                                    onClick={() => setToggled(false)}
+                                    >
+                                    <img  style={{height: '1.5rem', position: 'absolute' }} src="https://see.fontimg.com/api/renderfont4/d9z4R/eyJyIjoiZnMiLCJoIjo0MDAsInciOjIwMDAsImZzIjoyMDAsImZnYyI6IiMzNjRCNTAiLCJiZ2MiOiIjRkZGRkZGIiwidCI6MX0/Q29udGFjdHM/hello-good-old-style-regular.png" />
+                                    <img src="https://see.fontimg.com/api/renderfont4/L36OZ/eyJyIjoiZnMiLCJoIjoxNTYsInciOjIwMDAsImZzIjo3OCwiZmdjIjoiIzM2NEI1MCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eQ/font-frame-pro.png" style={{  width: '10rem' }} ></img>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 </motion.div>
             )}

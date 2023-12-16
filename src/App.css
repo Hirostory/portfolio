@@ -77,3 +77,101 @@
   /* margin-left: 3.5rem; */
   background-color: #282c34;
 }
+
+.frame-animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* border: red solid 1px; */
+  height: 100%;
+  width: 170%;
+}
+
+.frame-animation-image {
+  margin-top: 20rem;
+  height: 80%;
+  width: 100%;
+  position: relative;
+  /* opacity: .3; */
+}
+
+.frame-animation-menu {
+  display: flex;
+  
+  gap: 3rem;
+  margin-top: 14rem;
+  position: absolute;
+}
+
+.floatinng-menu-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.floatinng-menu-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.title-resume{
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.resume-background {
+  height: 580px;
+  width: 450px;
+  background-color: #F6CA8F;
+}
+
+.title-resume-shadow {
+  position: absolute;
+  margin-left: 20rem;
+  height: 20rem;
+  opacity: .2;
+  z-index: -2;
+}
+
+.resume-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.real-resume {
+  height: 35rem;
+  position: absolute;
+}
+
+.inside-resume {
+  height: 100%;
+  width: 100%;
+}
+
+.macbook {
+  height: 150px;
+  
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 550px;
+  border: red solid 2px;
+}
+
+.Projects-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: .5rem;
+  justify-content: center;
+  border: blue solid 2px;
+}
